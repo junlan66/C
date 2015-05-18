@@ -1,17 +1,16 @@
 #include <stdio.h>
 int main(void)
 {
+  printf("input a character\n");	
   
-  char a = 'Y'; 
+  char a = getchar(); 
 
-  int b = a+32;
-
-  if ((a >= 1 && a < 65) || (a > 90 && a < 128)) //small and others
+  if ((a >= 1 && a < 65) || (a > 90 && a < 128)) //lower and others
  {
  printf("%c\n",a);
  } else 
  {
-  printf("%c\n",b);  //big
+  printf("%c\n",a+32);  //upper
  }
 
   return(0);
